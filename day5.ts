@@ -1,6 +1,7 @@
 import { format } from "@std/fmt/bytes";
-import { green, red } from "@std/fmt/colors";
+import { green, red, yellow } from "@std/fmt/colors";
 import { sum } from "https://deno.land/x/sum/mod.ts";
+import process from "node:process";
 
 const puzzleInput: string = await Deno.readTextFile("data5");
 const [orderStr, printsStr] = puzzleInput.split("\r\n\r\n").map((x) =>
@@ -26,14 +27,23 @@ const printsDict = prints.map((p, i) =>
 );
 
 const rightOrder = prints.filter((printLine) => {
-  return printLine.every((x, i) => {
+  const rights = printLine.map((x, i) => {
     if (i === 0) return true;
     const prevSet = new Set(printLine.slice(0, i));
-    return !orderingSets[x]?.intersection(prevSet).size;
+    const right = !orderingSets[x]?.intersection(prevSet).size;
+    return right;
   });
+  const rightOrde = rights.every((x) => x);
+  console.log(
+    rights.map((x, i) => {
+      const print = printLine[i].toString();
+      return x && rightOrde ? green(print) : x ? yellow(print) : red(print);
+    }).join(","),
+  );
+
+  return rightOrde;
 }).map((x) => x[Math.floor(x.length / 2)]);
 
-console.log(green(rightOrder.toString()));
 const summ = sum(rightOrder);
 console.log(summ);
 
@@ -68,6 +78,4 @@ const wrongOrders = prints.filter((printLine) => {
   // return recursiveOrder(i, printLine[0], new Set(printLine), printLine);
 }).map((x) => x[Math.floor(x.length / 2)]);
 
-console.log(green(wrongOrders.toString()));
 const sum2 = sum(wrongOrders);
-console.log(sum2);
