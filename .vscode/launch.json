@@ -11,7 +11,7 @@
       "program": "${workspaceFolder}/day5.ts",
       "cwd": "${workspaceFolder}",
       "env": {},
-      "runtimeExecutable": "C:\\Users\\Mads Egedal Kirchhof\\.deno\\bin\\deno.EXE",
+      "runtimeExecutable": "C:\\Users\\MadsKirchhoff\\.deno\\bin\\deno.EXE",
       "runtimeArgs": [
         "run",
         "--unstable",

@@ -3,6 +3,7 @@
   "specifiers": {
     "jsr:@std/assert@*": "1.0.8",
     "jsr:@std/assert@1": "1.0.8",
+    "jsr:@std/fmt@^1.0.3": "1.0.3",
     "jsr:@std/internal@^1.0.5": "1.0.5"
   },
   "jsr": {
@@ -12,13 +13,23 @@
         "jsr:@std/internal"
       ]
     },
+    "@std/fmt@1.0.3": {
+      "integrity": "97765c16aa32245ff4e2204ecf7d8562496a3cb8592340a80e7e554e0bb9149f"
+    },
     "@std/internal@1.0.5": {
       "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
     }
   },
+  "redirects": {
+    "https://deno.land/x/sum/mod.ts": "https://deno.land/x/sum@v1.1.0/mod.ts"
+  },
+  "remote": {
+    "https://deno.land/x/sum@v1.1.0/mod.ts": "e9f9e31fe16dede9c4b24eb359bef92c4ce7e6d192c1d644042c82d8fd727006"
+  },
   "workspace": {
     "dependencies": [
-      "jsr:@std/assert@1"
+      "jsr:@std/assert@1",
+      "jsr:@std/fmt@^1.0.3"
     ]
   }
 }
