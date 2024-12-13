@@ -1200,6 +1200,12 @@
       "integrity": "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g=="
     }
   },
+  "redirects": {
+    "https://deno.land/x/sum/mod.ts": "https://deno.land/x/sum@v1.1.0/mod.ts"
+  },
+  "remote": {
+    "https://deno.land/x/sum@v1.1.0/mod.ts": "e9f9e31fe16dede9c4b24eb359bef92c4ce7e6d192c1d644042c82d8fd727006"
+  },
   "workspace": {
     "packageJson": {
       "dependencies": [

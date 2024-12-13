@@ -36,7 +36,8 @@ const recursiveExploreRegion = (
     const cell = getMatrixValue(newCoord);
     if (!cell || cell !== letter) {
       const newCoord = addCoordinates(
-        directionsVector.at(index - 1),
+        // biome-ignore lint/style/noNonNullAssertion: <explanation>
+        directionsVector.at(index - 1)!,
         currentCoordinate,
       );
       const newValue = getMatrixValue(newCoord);
