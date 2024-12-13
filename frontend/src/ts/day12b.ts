@@ -1,5 +1,3 @@
-import { format } from "@std/fmt/bytes";
-import { green, red, yellow } from "@std/fmt/colors";
 import { sum } from "https://deno.land/x/sum/mod.ts";
 import {
   addCoordinates,
@@ -10,9 +8,11 @@ import {
   getMatrixValue,
   getMatrixValueXY,
   mapMatrix,
-} from "./helpers.ts";
+} from "../../src/ts/helpers.ts";
 
-const { matrixXY } = await fileToMatrix("data12");
+export const day12 = async () => { 
+
+ const { matrixXY } = await fileToMatrix("data12");
 // Looks like
 // AAAA
 // BBCD
@@ -63,7 +63,7 @@ const recursiveExploreRegion = (
 };
 
 let result = 0;
-forEachCoordinate(matrixXY, ([x, y]) => {
+const solutionFunction = () => forEachCoordinate(matrixXY, ([x, y]) => {
   if (explored[x][y]) {
     return;
   }
@@ -77,4 +77,8 @@ forEachCoordinate(matrixXY, ([x, y]) => {
   result += area * perimeter;
   // console.log(currentLetter, [x, y], area, perimeter, area * perimeter);
 });
+solutionFunction();
 console.log(result);
+
+  return { result, solutionFunction, recursiveExploreRegion, matrixXY, explored };
+}

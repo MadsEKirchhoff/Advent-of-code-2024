@@ -1,36 +1,15 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@std/assert@*": "1.0.8",
-    "jsr:@std/assert@1": "1.0.8",
-    "jsr:@std/fmt@^1.0.3": "1.0.3",
-    "jsr:@std/internal@^1.0.5": "1.0.5",
     "npm:@types/express@5": "5.0.0",
-    "npm:@types/node@*": "22.5.4",
     "npm:@types/node@^22.10.0": "22.10.1",
     "npm:compression@^1.7.5": "1.7.5",
-    "npm:create-vite-extra@latest": "3.0.0",
     "npm:cross-env@^7.0.3": "7.0.3",
     "npm:express@^5.0.1": "5.0.1",
-    "npm:react@*": "19.0.0",
     "npm:sirv@3": "3.0.0",
     "npm:solid-js@^1.9.3": "1.9.3_seroval@1.1.1",
-    "npm:vite-plugin-solid@^2.11.0": "2.11.0_solid-js@1.9.3__seroval@1.1.1_vite@6.0.3__@types+node@22.5.4_@babel+core@7.26.0_@types+node@22.5.4",
-    "npm:vite@^6.0.1": "6.0.3_@types+node@22.5.4"
-  },
-  "jsr": {
-    "@std/assert@1.0.8": {
-      "integrity": "ebe0bd7eb488ee39686f77003992f389a06c3da1bbd8022184804852b2fa641b",
-      "dependencies": [
-        "jsr:@std/internal"
-      ]
-    },
-    "@std/fmt@1.0.3": {
-      "integrity": "97765c16aa32245ff4e2204ecf7d8562496a3cb8592340a80e7e554e0bb9149f"
-    },
-    "@std/internal@1.0.5": {
-      "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
-    }
+    "npm:vite-plugin-solid@^2.11.0": "2.11.0_solid-js@1.9.3__seroval@1.1.1_vite@6.0.3__@types+node@22.10.1_@babel+core@7.26.0_@types+node@22.10.1",
+    "npm:vite@^6.0.1": "6.0.3_@types+node@22.10.1"
   },
   "npm": {
     "@ampproject/remapping@2.3.0": {
@@ -548,14 +527,6 @@
     "cookie@0.7.1": {
       "integrity": "sha512-6DnInpx7SJ2AK3+CTUE/ZM0vWTUboZCegxhC2xiIydHR9jNuTAASBrfEpHhiGOZw/nX51bHt6YQl8jsGo4y/0w=="
     },
-    "create-vite-extra@3.0.0": {
-      "integrity": "sha512-UBhkDKwxmTCIcxEyppy6HVE5x3ZRwA5UEdVBpn0M5NfE6eqt7TI4B3af3JZCvbUv8LMbfUcnHvP//cP75HwRug==",
-      "dependencies": [
-        "minimist",
-        "picocolors",
-        "prompts"
-      ]
-    },
     "cross-env@7.0.3": {
       "integrity": "sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==",
       "dependencies": [
@@ -830,9 +801,6 @@
     "json5@2.2.3": {
       "integrity": "sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg=="
     },
-    "kleur@3.0.3": {
-      "integrity": "sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w=="
-    },
     "lru-cache@5.1.1": {
       "integrity": "sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==",
       "dependencies": [
@@ -877,9 +845,6 @@
       "dependencies": [
         "mime-db@1.53.0"
       ]
-    },
-    "minimist@1.2.8": {
-      "integrity": "sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA=="
     },
     "mrmime@2.0.0": {
       "integrity": "sha512-eu38+hdgojoyq63s+yTpN4XMBdt5l8HhMhc4VKLO9KM5caLIBvUm4thi7fFaxyTmCKeNnXZ5pAlBwCUnhA09uw=="
@@ -949,13 +914,6 @@
         "source-map-js"
       ]
     },
-    "prompts@2.4.2": {
-      "integrity": "sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==",
-      "dependencies": [
-        "kleur",
-        "sisteransi"
-      ]
-    },
     "proxy-addr@2.0.7": {
       "integrity": "sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==",
       "dependencies": [
@@ -980,9 +938,6 @@
         "iconv-lite@0.6.3",
         "unpipe"
       ]
-    },
-    "react@19.0.0": {
-      "integrity": "sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ=="
     },
     "rollup@4.28.1": {
       "integrity": "sha512-61fXYl/qNVinKmGSTHAZ6Yy8I3YIJC/r2m9feHo6SwVAVcLT5MPwOUFe7EuURA/4m0NR8lXG4BBXuo/IZEsjMg==",
@@ -1133,9 +1088,6 @@
         "totalist"
       ]
     },
-    "sisteransi@1.0.5": {
-      "integrity": "sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg=="
-    },
     "solid-js@1.9.3_seroval@1.1.1": {
       "integrity": "sha512-5ba3taPoZGt9GY3YlsCB24kCg0Lv/rie/HTD4kG6h4daZZz7+yK02xn8Vx8dLYBc9i6Ps5JwAbEiqjmKaLB3Ag==",
       "dependencies": [
@@ -1206,7 +1158,7 @@
     "vary@1.1.2": {
       "integrity": "sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg=="
     },
-    "vite-plugin-solid@2.11.0_solid-js@1.9.3__seroval@1.1.1_vite@6.0.3__@types+node@22.5.4_@babel+core@7.26.0_@types+node@22.5.4": {
+    "vite-plugin-solid@2.11.0_solid-js@1.9.3__seroval@1.1.1_vite@6.0.3__@types+node@22.10.1_@babel+core@7.26.0_@types+node@22.10.1": {
       "integrity": "sha512-G+NiwDj4EAeUE0wt3Ur9f+Lt9oMUuLd0FIxYuqwJSqRacKQRteCwUFzNy8zMEt88xWokngQhiFjfJMhjc1fDXw==",
       "dependencies": [
         "@babel/core",
@@ -1219,17 +1171,17 @@
         "vitefu"
       ]
     },
-    "vite@6.0.3_@types+node@22.5.4": {
+    "vite@6.0.3_@types+node@22.10.1": {
       "integrity": "sha512-Cmuo5P0ENTN6HxLSo6IHsjCLn/81Vgrp81oaiFFMRa8gGDj5xEjIcEpf2ZymZtZR8oU0P2JX5WuUp/rlXcHkAw==",
       "dependencies": [
-        "@types/node@22.5.4",
+        "@types/node@22.10.1",
         "esbuild",
         "fsevents",
         "postcss",
         "rollup"
       ]
     },
-    "vitefu@1.0.4_vite@6.0.3__@types+node@22.5.4_@types+node@22.5.4": {
+    "vitefu@1.0.4_vite@6.0.3__@types+node@22.10.1_@types+node@22.10.1": {
       "integrity": "sha512-y6zEE3PQf6uu/Mt6DTJ9ih+kyJLr4XcSgHR2zUkM8SWDhuixEJxfJ6CZGMHh1Ec3vPLoEA0IHU5oWzVqw8ulow==",
       "dependencies": [
         "vite"
@@ -1248,18 +1200,7 @@
       "integrity": "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g=="
     }
   },
-  "redirects": {
-    "https://deno.land/x/sum/mod.ts": "https://deno.land/x/sum@v1.1.0/mod.ts"
-  },
-  "remote": {
-    "https://deno.land/x/sum@v1.1.0/mod.ts": "e9f9e31fe16dede9c4b24eb359bef92c4ce7e6d192c1d644042c82d8fd727006"
-  },
   "workspace": {
-    "dependencies": [
-      "jsr:@std/assert@1",
-      "jsr:@std/fmt@^1.0.3",
-      "npm:react@*"
-    ],
     "packageJson": {
       "dependencies": [
         "npm:@types/express@5",
